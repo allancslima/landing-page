@@ -4,7 +4,7 @@ html, body {
 }
 body {
 	font-family: 'Lato', sans-serif;
-	color: #363945;
+	color: #363636;
 	background-color: #f4f4f4;
 }
 h1, h2, h3 {
@@ -26,7 +26,7 @@ h1, h2, h3 {
 	border-radius: 3px;
 }
 .btn-form:hover {
-	background-color: #008db1;
+	background-color: transparent;
 	color: #fff;
 }
 /* TOP */
@@ -36,18 +36,22 @@ h1, h2, h3 {
 	flex-direction: row;
 	align-items: center;
 	justify-content: flex-start;
-	background-color: #373946;
+	background-color: #fff;
+}
+#top nav img {
+	width: 40px; 
+	height: 40px;
+	margin-left: 2vh;
 }
 #top nav a {
-	margin-left: 5vh;
 	text-decoration: none;
 	font-size: 28px;
 	font-weight: 700;
-	color: #fff;
+	color: #363636;
 }
 #top header {
 	width: 100%;
-	background-color: #008db1;
+	background-color: #00a4d3;
 }
 #top header #content {
 	max-width: 600px;
@@ -58,18 +62,26 @@ h1, h2, h3 {
 	box-sizing: border-box;
 	color: #fff;
 }
+#top header #content span {
+	font-size: 60px;
+}
 #top header #content p {
 	text-align: center;
-	line-height: 1.6em;
+	font-size: 18px;
+	line-height: 32px;
 }
 /* OFFERINGS */
 #offerings {
 	padding: 20px;
 	box-sizing: border-box;
 }
-#offerings div {
-	text-align: center;
-	line-height: 1.5em;
+#offerings > span {
+	margin-bottom: 30px;
+	font-size: 36px;
+}
+#offerings div span {
+	font-size: 24px;
+	font-weight: 700;
 }
 #offerings div img {
 	height: 200px;
@@ -78,14 +90,18 @@ h1, h2, h3 {
 	margin-bottom: 10px;
 	background-color: #f4f4f4;
 }
+#offerings div p {
+	text-align: center;
+	font-size: 16px;
+	line-height: 28px;
+}
 /* FOOTER */
 footer {
 	width: 100%;
 	padding: 10px 0;
 	justify-content: center;
-	background-color: #373946;
+	background-color: #FFF;
 	font-size: 1.2em;
-	color: #fff;
 	border-top: 1px solid #cecece;
 }
 /* MEDIA QUERIES */
@@ -111,7 +127,7 @@ footer {
 		flex-wrap: wrap;
 		margin: 0 auto;
 	}
-	#offerings h2 {
+	#offerings span {
 		width: 100%;
 		text-align: center;
 	}
