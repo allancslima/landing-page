@@ -17,8 +17,9 @@ h1, h2, h3 {
 }
 .btn-form {
 	padding: 20px;
+	margin-bottom: 20px;
 	background-color: #fff;
-	font-size: 18px;
+	font-size: 20px;
 	font-weight: 700;
 	text-decoration: none;
 	color: #008db1;
@@ -63,7 +64,8 @@ h1, h2, h3 {
 	color: #fff;
 }
 #top header #content span {
-	font-size: 60px;
+	font-size: 50px;
+	text-align: center;
 }
 #top header #content p {
 	text-align: center;
@@ -101,11 +103,10 @@ footer {
 	padding: 10px 0;
 	justify-content: center;
 	background-color: #FFF;
-	font-size: 1.2em;
 	border-top: 1px solid #cecece;
 }
 /* MEDIA QUERIES */
-@media screen and (min-height: 550px) {
+@media screen and (min-height: 630px) {
 	#top {
 		height: auto;
 		min-height: 100%;
@@ -117,12 +118,17 @@ footer {
 	#top header { 
 		height: 90vh; 
 	}
+	#offerings {
+		height: 90vh;
+	}
+	footer {
+		height: 10vh; 
+		padding: 0;
+	}
 }
-@media screen and (min-height: 550px) and (min-width: 768px) {
-	/* OFFERINGS */
+@media screen and (min-width: 768px) {
 	#offerings {
 		max-width: 1000px;
-		height: 90vh;
 		flex-direction: row;
 		flex-wrap: wrap;
 		margin: 0 auto;
@@ -135,10 +141,5 @@ footer {
 		flex-grow: 1;
         flex-basis: 150px;
         padding: 0 10px;
-	}
-	/* FOOTER */
-	footer {
-		height: 10vh; 
-		padding: 0;
 	}
 }
